@@ -11,11 +11,10 @@
 <body class="transition-all duration-300">
     <!-- Theme Toggle -->
     <div class="fixed bottom-4 right-4 z-50">
-        <button id="themeToggle" class="theme-toggle-btn">
+        <button id="themeToggle" class="theme-toggle-btn p-3 rounded-full bg-gray-800 text-white hover:bg-gray-700">
             <i class="fas fa-moon" id="themeIcon"></i>
         </button>
     </div>
-
 
     <!-- Navigation -->
     <nav class="fixed top-0 left-0 right-0 z-40 nav-bg backdrop-blur-md border-b border-opacity-20">
@@ -23,7 +22,7 @@
             <div class="flex justify-between items-center">
                 <div class="text-2xl font-bold gradient-text">Kairab Roy</div>
                 <div class="hidden md:flex space-x-8">
-                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#home" class="nav-link active">Home</a>
                     <a href="#about" class="nav-link">About</a>
                     <a href="#education" class="nav-link">Education</a>
                     <a href="#research" class="nav-link">Research</a>
@@ -55,7 +54,7 @@
     <section id="home" class="min-h-screen flex items-center justify-center hero-bg">
         <div class="container mx-auto px-6 text-center">
             <div class="profile-container mb-8">
-                <img src="public/Passportphoto.jpg" alt="Kairab Roy" class="profile-image">
+                <img src="public/Passportphoto.jpg" alt="Kairab Roy" class="profile-image rounded-full shadow-lg">
             </div>
             <h1 class="text-5xl md:text-7xl font-bold mb-6 gradient-text animate-fade-in">
                 Kairab Roy
@@ -70,13 +69,13 @@
                 <span class="skill-tag">Signal Processing</span>
             </div>
             <div class="flex justify-center space-x-6">
-                <a href="https://linkedin.com/in/kairab-r-6a074b136" target="_blank" class="social-btn">
+                <a href="https://linkedin.com/in/kairab-r-6a074b136" target="_blank" class="social-btn hover:scale-110 transition-transform">
                     <i class="fab fa-linkedin-in"></i>
                 </a>
-                <a href="https://github.com/KairabRoy" target="_blank" class="social-btn">
+                <a href="https://github.com/KairabRoy" target="_blank" class="social-btn hover:scale-110 transition-transform">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="mailto:rewroy2015@gmail.com" class="social-btn">
+                <a href="mailto:rewroy2015@gmail.com" class="social-btn hover:scale-110 transition-transform">
                     <i class="fas fa-envelope"></i>
                 </a>
             </div>
@@ -199,36 +198,16 @@
             <div class="max-w-6xl mx-auto space-y-8">
                 <div class="card-3d p-8 hover-lift">
                     <div class="flex items-start mb-4">
-                        <i class="fas fa-microscope text-3xl text-primary mr-4 mt-1"></i>
-                        <div class="flex-1">
-                            <h3 class="text-2xl font-semibold mb-2">FuseSeg-Net: Improved Crack Segmentation</h3>
-                            <span class="status-badge ongoing">Ongoing</span>
-                        </div>
-                    </div>
-                    <p class="text-secondary mb-4">
-                        Isolating cracks in images (typically of roads, walls, or structures) at the pixel level to support 
-                        automated damage assessment and maintenance. Using deep learning-based semantic segmentation models like U-Net.
-                    </p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">OpenSlide</span>
-                        <span class="tech-tag">scikit-image</span>
-                        <span class="tech-tag">U-Net</span>
-                        <span class="tech-tag">Deep Learning</span>
-                    </div>
-                </div>
-
-                <div class="card-3d p-8 hover-lift">
-                    <div class="flex items-start mb-4">
                         <i class="fas fa-kidneys text-3xl text-primary mr-4 mt-1"></i>
                         <div class="flex-1">
-                            <h3 class="text-2xl font-semibold mb-2">Glomeruli Kidney Segmentation (Encoder Decoder based)</h3>
-                            <span class="status-badge ongoing">Ongoing</span>
+                            <h3 class="text-2xl font-semibold mb-2">GlomSNet: a Novel Network for Semantic Glomeruli Segmentation in Renal Pathology</h3>
+                            <span class="status-badge ongoing">Under Review - JBHI</span>
                         </div>
                     </div>
                     <p class="text-secondary mb-4">
-                        Segmentation of glomeruli, sclerotic glomeruli, and tubules in histopathology TIFF images. 
-                        Handled multi-layered TIFF masks and edge case processing using advanced image processing techniques.
+                        Segmentation of glomeruli, sclerotic glomeruli, and tubules in histopathology TIFF, JPEG and PNG images. 
+                        Encoder-Decoder architecture with custom attention mechanisms (ADB, BSAM, DSFM, etc.) for enhanced feature extraction and 
+                        achieve superior segmentation performance. Datasets used: KPIs24, Mice Glomeruli 2019 and HuBMAP- Hacking the Kidney.
                     </p>
                     <div class="flex flex-wrap gap-2 mb-4">
                         <span class="tech-tag">Python</span>
@@ -236,6 +215,32 @@
                         <span class="tech-tag">scikit-image</span>
                         <span class="tech-tag">Memory-mapped arrays</span>
                         <span class="tech-tag">Medical Imaging</span>
+                        <span class="tech-tag">U-Net</span>
+                        <span class="tech-tag">Deep Learning</span>
+                    </div>
+                </div>
+
+                <div class="card-3d p-8 hover-lift">
+                    <div class="flex items-start mb-4">
+                        <i class="fas fa-microscope text-3xl text-primary mr-4 mt-1"></i>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-semibold mb-2">FuseSeg-Net: a Fusion Attention-Based U-Net for Improved Crack Segmentation</h3>
+                            <span class="status-badge ongoing">Under Review - CICN</span>
+                        </div>
+                    </div>
+                    <p class="text-secondary mb-4">
+                        Isolating cracks in images (typically of roads, walls, or structures) at the pixel level to support 
+                        automated damage assessment and maintenance. Using deep learning-based semantic segmentation models like U-Net.
+                        Used Tensorflow with OpenSlide, scikit-image, and memory-mapped arrays.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">OpenSlide</span>
+                        <span class="tech-tag">scikit-image</span>
+                        <span class="tech-tag">memory-mapped arrays</span>
+                        <span class="tech-tag">U-Net</span>
+                        <span class="tech-tag">Deep Learning</span>
                     </div>
                 </div>
 
@@ -277,64 +282,6 @@
             <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div class="card-3d p-6 hover-lift">
                     <div class="flex items-start mb-4">
-                        <i class="fas fa-video text-2xl text-primary mr-3 mt-1"></i>
-                        <div class="flex-1">
-                            <h3 class="text-xl font-semibold mb-2">Scalable MPEG-1 Video Compression</h3>
-                            <span class="status-badge recent">April 2025</span>
-                        </div>
-                    </div>
-                    <p class="text-secondary mb-4">
-                        Implemented SNR, spatial, and temporal scalability in an MPEG-1 framework using MATLAB for analog 
-                        signal processing. Analyzed trade-offs in bitrate and resolution using MSE and SNR metrics.
-                    </p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="tech-tag">MATLAB</span>
-                        <span class="tech-tag">MPEG-1</span>
-                        <span class="tech-tag">Signal Processing</span>
-                    </div>
-                </div>
-
-                <div class="card-3d p-6 hover-lift">
-                    <div class="flex items-start mb-4">
-                        <i class="fas fa-brain text-2xl text-primary mr-3 mt-1"></i>
-                        <div class="flex-1">
-                            <h3 class="text-xl font-semibold mb-2">Handwritten Digit Recognition Using Neural Networks</h3>
-                            <span class="status-badge recent">Jan 2025</span>
-                        </div>
-                    </div>
-                    <p class="text-secondary mb-4">
-                        Built and trained a Convolutional Neural Network (CNN) on the MNIST dataset using TensorFlow/Keras. 
-                        Achieved over 98% accuracy by optimizing architecture and hyperparameters.
-                    </p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">TensorFlow</span>
-                        <span class="tech-tag">Keras</span>
-                        <span class="tech-tag">CNN</span>
-                    </div>
-                </div>
-
-                <div class="card-3d p-6 hover-lift">
-                    <div class="flex items-start mb-4">
-                        <i class="fas fa-map-marked-alt text-2xl text-primary mr-3 mt-1"></i>
-                        <div class="flex-1">
-                            <h3 class="text-xl font-semibold mb-2">Trajectory Prediction Using LSTM</h3>
-                            <span class="status-badge">Mar 2022</span>
-                        </div>
-                    </div>
-                    <p class="text-secondary mb-4">
-                        Built an LSTM model in PyTorch for GPS trajectory prediction, achieving MAE of 0.0033 and RMSE of 0.0139 on the Geolife dataset. Preprocessed Geolife/Porto datasets using Pandas and NumPy, optimizing training with data loaders and early stopping.
-                    </p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="tech-tag">PyTorch</span>
-                        <span class="tech-tag">Pandas</span>
-                        <span class="tech-tag">NumPy</span>
-                        <span class="tech-tag">LSTM</span>
-                    </div>
-                </div>
-
-                <div class="card-3d p-6 hover-lift">
-                    <div class="flex items-start mb-4">
                         <i class="fas fa-microchip text-2xl text-primary mr-3 mt-1"></i>
                         <div class="flex-1">
                             <h3 class="text-xl font-semibold mb-2">8085 Microprocessor Programming for Data Processing</h3>
@@ -345,49 +292,95 @@
                         Developed an 8085 assembly program using instructions like XRA A and RAR for efficient data manipulation. 
                         Achieved zero-error output through precise instruction sequencing and debugging.
                     </p>
-                    <div class="flex flex-wrap gap-2">
+                    <div class="flex flex-wrap gap-2 mb-4">
                         <span class="tech-tag">8085 Assembly</span>
                         <span class="tech-tag">Microprocessor</span>
                         <span class="tech-tag">Embedded Systems</span>
                     </div>
+                    <a href="#" class="project-btn">View Details</a>
                 </div>
 
                 <div class="card-3d p-6 hover-lift">
                     <div class="flex items-start mb-4">
-                        <i class="fas fa-calculator text-2xl text-primary mr-3 mt-1"></i>
+                        <i class="fas fa-map-marked-alt text-2xl text-primary mr-3 mt-1"></i>
                         <div class="flex-1">
-                            <h3 class="text-xl font-semibold mb-2">Basic Calculator Using Logic Gates</h3>
-                            <span class="status-badge">May 2020</span>
+                            <h3 class="text-xl font-semibold mb-2">Trajectory Prediction Using LSTM</h3>
+                            <span class="status-badge">Mar 2023</span>
                         </div>
                     </div>
                     <p class="text-secondary mb-4">
-                        Designed and implemented a digital calculator using fundamental logic gates (AND, OR, XOR) on a breadboard. 
-                        Developed half adders, full adders, and control logic for arithmetic operations.
+                        Built an LSTM model in PyTorch for GPS trajectory prediction, achieving MAE of 0.0033 and RMSE of 0.0139 on the Geolife dataset. Preprocessed Geolife/Porto datasets using Pandas and NumPy, optimizing training with data loaders and early stopping.
                     </p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="tech-tag">Digital Logic</span>
-                        <span class="tech-tag">Logic Gates</span>
-                        <span class="tech-tag">Circuit Design</span>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">NumPy</span>
+                        <span class="tech-tag">LSTM</span>
                     </div>
+                    <a href="https://github.com/KairabRoy/trajectory-prediction" target="_blank" class="project-btn">View on GitHub</a>
                 </div>
 
                 <div class="card-3d p-6 hover-lift">
                     <div class="flex items-start mb-4">
-                        <i class="fas fa-tint text-2xl text-primary mr-3 mt-1"></i>
+                        <i class="fas fa-brain text-2xl text-primary mr-3 mt-1"></i>
                         <div class="flex-1">
-                            <h3 class="text-xl font-semibold mb-2">Automated Water Level Indicator with Pump Controller</h3>
-                            <span class="status-badge">May 2019</span>
+                            <h3 class="text-xl font-semibold mb-2">Handwritten Digit Recognition Using Neural Networks</h3>
+                            <span class="status-badge recent">Dec 2024</span>
                         </div>
                     </div>
                     <p class="text-secondary mb-4">
-                        Designed an analog sensor-based system for water level detection using ULN2003 IC for relay-based 
-                        pump control. Optimized circuit for efficient power management and reliable automation.
+                        Built and trained a Convolutional Neural Network (CNN) on the MNIST dataset using TensorFlow/Keras. 
+                        Achieved over 98% accuracy. Visualized filters and confusion matrix for model interpretability.
                     </p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="tech-tag">ULN2003 IC</span>
-                        <span class="tech-tag">Analog Sensors</span>
-                        <span class="tech-tag">Automation</span>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">Keras</span>
+                        <span class="tech-tag">CNN</span>
                     </div>
+                    <a href="https://github.com/KairabRoy/handwritten-digit-recognition" target="_blank" class="project-btn">View on GitHub</a>
+                </div>
+
+                <div class="card-3d p-6 hover-lift">
+                    <div class="flex items-start mb-4">
+                        <i class="fas fa-video text-2xl text-primary mr-3 mt-1"></i>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-semibold mb-2">Scalable MPEG-1 Video Compression</h3>
+                            <span class="status-badge recent">Jan 2025</span>
+                        </div>
+                    </div>
+                    <p class="text-secondary mb-4">
+                        Implemented SNR, spatial, and temporal scalability in an MPEG-1 framework using MATLAB for analog 
+                        signal processing. Analyzed trade-offs in bitrate and resolution using MSE and SNR metrics, achieving optimal temporal scalability.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="tech-tag">MATLAB</span>
+                        <span class="tech-tag">MPEG-1</span>
+                        <span class="tech-tag">Signal Processing</span>
+                    </div>
+                    <a href="#" class="project-btn">View Details</a>
+                </div>
+
+                <div class="card-3d p-6 hover-lift">
+                    <div class="flex items-start mb-4">
+                        <i class="fas fa-vial text-2xl text-primary mr-3 mt-1"></i>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-semibold mb-2">White Blood Cell (WBC) Classification</h3>
+                            <span class="status-badge recent">April 2025</span>
+                        </div>
+                    </div>
+                    <p class="text-secondary mb-4">
+                        Built a deep learning CNN model to classify microscopic images of white blood cells into multiple categories. 
+                        Performed comprehensive evaluation using Confusion Matrix, ROC-AUC, and classification reports. 
+                        Visualized correctly and misclassified WBC images to improve model interpretability using Matplotlib.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Keras</span>
+                        <span class="tech-tag">Matplotlib</span>
+                        <span class="tech-tag">CNN</span>
+                    </div>
+                    <a href="#" class="project-btn">View Details</a>
                 </div>
             </div>
         </div>
@@ -473,13 +466,14 @@
                     <div class="card-3d p-6">
                         <h3 class="text-xl font-semibold mb-4 flex items-center">
                             <i class="fas fa-robot text-primary mr-3"></i>
-                            ML Framework
+                            AI/ML Frameworks
                         </h3>
                         <div class="flex flex-wrap gap-2">
                             <span class="skill-tag">PyTorch</span>
                             <span class="skill-tag">TensorFlow</span>
-                            <span class="skill-tag">OpenCV</span>
                             <span class="skill-tag">Scikit-learn</span>
+                            <span class="skill-tag">OpenCV</span>
+                            <span class="skill-tag">Jupyter Notebooks</span>
                         </div>
                     </div>
 
@@ -491,6 +485,8 @@
                         <div class="flex flex-wrap gap-2">
                             <span class="skill-tag">SPICE</span>
                             <span class="skill-tag">Cadence</span>
+                            <span class="skill-tag">PLC</span>
+                            <span class="skill-tag">FPGA</span>
                         </div>
                     </div>
 
@@ -502,31 +498,32 @@
                         <div class="flex flex-wrap gap-2">
                             <span class="skill-tag">Digital Circuit Design</span>
                             <span class="skill-tag">Embedded Systems</span>
-                            <span class="skill-tag">PLC</span>
-                            <span class="skill-tag">FPGA</span>
                         </div>
                     </div>
 
                     <div class="card-3d p-6">
                         <h3 class="text-xl font-semibold mb-4 flex items-center">
                             <i class="fas fa-tools text-primary mr-3"></i>
-                            Tools
+                            Software Tools
                         </h3>
                         <div class="flex flex-wrap gap-2">
                             <span class="skill-tag">Git</span>
-                            <span class="skill-tag">Selenium</span>
+                            <span class="skill-tag">Pandas</span>
+                            <span class="skill-tag">Matplotlib</span>
+                            <span class="skill-tag">Seaborn</span>
                         </div>
                     </div>
 
                     <div class="card-3d p-6">
                         <h3 class="text-xl font-semibold mb-4 flex items-center">
-                            <i class="fas fa-chart-bar text-primary mr-3"></i>
-                            Data Analysis
+                            <i class="fas fa-lightbulb text-primary mr-3"></i>
+                            Concepts
                         </h3>
                         <div class="flex flex-wrap gap-2">
-                            <span class="skill-tag">pandas</span>
-                            <span class="skill-tag">matplotlib</span>
-                            <span class="skill-tag">seaborn</span>
+                            <span class="skill-tag">Deep Learning</span>
+                            <span class="skill-tag">Computer Vision</span>
+                            <span class="skill-tag">Medical Image Segmentation</span>
+                            <span class="skill-tag">Data Preprocessing</span>
                         </div>
                     </div>
                 </div>
@@ -590,7 +587,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="text-center">
+                    <div class="text-center mb-8">
                         <p class="text-secondary mb-2">
                             <i class="fas fa-map-marker-alt mr-2"></i>
                             Vill- Husludanga, PO- Bhangamali, PS- Maynaguri, Dist- Jalpaiguri, PIN- 735224
@@ -599,6 +596,15 @@
                             <i class="fas fa-phone mr-2"></i>
                             +91-7318517122
                         </p>
+                    </div>
+                    <div class="mt-8">
+                        <h3 class="text-xl font-semibold mb-4">Send a Message</h3>
+                        <div class="space-y-4">
+                            <input type="text" id="name" placeholder="Your Name" class="w-full p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary">
+                            <input type="email" id="email" placeholder="Your Email" class="w-full p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary">
+                            <textarea id="message" placeholder="Your Message" rows="5" class="w-full p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+                            <button id="submitMessage" class="project-btn">Send Message</button>
+                        </div>
                     </div>
                 </div>
             </div>
